@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Rak Buku</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Aplikasi Rak Buku
+        </h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="container bg-white shadow input">
+            <h2 class="container-header text-center">Masukkan Judul Buku Untuk Dibaca</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="author">Penulis</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="inputBookYear">Tahun Rilis</label>
+                    <input type="number" id="inputBookYear" name="inputBookYear" required>
+                </div>
+                <input type="submit" value="Masukkan Buku" name="Submit" class="btn-submit">
+            </form>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">Tekan Ceklis Jika Buku Sudah Dibaca</h2>
+            <div class="list-item" id="bukus">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">List Buku yang sudah Dibaca</h2>
+            <div class="list-item" id="completed-books">
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
